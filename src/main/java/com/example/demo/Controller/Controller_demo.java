@@ -20,7 +20,7 @@ import com.example.demo.Service.Service_demo;
 public class Controller_demo {
 	@Autowired
 	Service_demo sd;
-
+//git commitするためにコメント追加
 	@GetMapping("/get/{name}")
 	public String getData(@PathVariable("name") String name,
 			@RequestParam(name = "score", value = "score", defaultValue = "スコア", required = false) Integer score) {
